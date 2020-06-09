@@ -5,7 +5,7 @@ import { cyan } from 'ansi-colors';
 export const Navbar = props => {
   return (
     <View style={styles.navbar}>
-      <Text style={styles.text}>What to do?</Text>
+      <Text style={styles.text}>{props.title}</Text>
     </View>
   );
 }
@@ -16,9 +16,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: "flex-end",
     backgroundColor: '#000',
+    padding: 5
   },
   text: {
     color: '#fff',
-    fontSize: 20
+    fontSize: 15
   }
 });
