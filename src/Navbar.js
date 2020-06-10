@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { cyan } from 'ansi-colors';
 
 export const Navbar = props => {
   return (
@@ -15,7 +14,7 @@ const styles = StyleSheet.create({
     height: 60,
     alignItems: 'center',
     justifyContent: "flex-end",
-    backgroundColor: '#000',
+    backgroundColor: '#3581b8',
     padding: 5
   },
   text: {
