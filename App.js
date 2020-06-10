@@ -23,6 +23,11 @@ export default function App() {
       <View style={styles.container}>
         <AddTodo onSubmit={addTodo}/>
       </View>
+      <View>
+        { todos.map(todo => {
+          return <Text key={todo.id}>{todo.title}</Text>
+        }) }
+      </View>
       
       
       
