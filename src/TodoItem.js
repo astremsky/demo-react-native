@@ -13,14 +13,15 @@ const styles = StyleSheet.create({
     todo: {
         flexDirection: 'row',
         alignItems: 'center',
+        justifyContent: 'center',
         padding: 15,
         marginTop: 10,
         backgroundColor: '#3581b8',
-        
         borderRadius: 30,
     },
     text: {
         color: '#fff',
+        fontSize: 20
     }
 })
 
