@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
-import {View, StyleSheet, TextInput, Button} from 'react-native'
-import { set } from 'badgin';
+import {View, StyleSheet, TextInput, Button, Alert} from 'react-native'
 
 export const AddTodo = ({ onSubmit }) => {
 
     const [value, setValue] = useState('')
 
     const pressAdd = () => {
-        onSubmit(value)
-        setValue('')
+        if(value.trim()) {
+            onSubmit(value)
+            setValue('')
+        } else {
+            Alert.alert('Please name your task')
+        }
+        
     }
 
     return(
