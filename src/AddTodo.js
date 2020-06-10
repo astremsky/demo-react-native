@@ -14,16 +14,13 @@ const styles = StyleSheet.create({
     block: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
-
+        alignItems: 'center',
     },
     input: {
         width: '80%',
         borderStyle: 'solid',
         borderBottomWidth: 2,
-        
-
-
+        padding: 15,
     },
     button: {
        color: '#fff'
